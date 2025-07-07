@@ -65,30 +65,30 @@ const DescriptionBox = ({
 const DesktopView = () => {
   return (
     <>
-      {/* Awan-awan dengan ukuran dan posisi khusus Desktop */}
+      {/* Awan-awan (tidak diubah) */}
       <Cloud
         src={MendungImg1}
         alt="Mendung Kiri"
-        className="top-[5rem] left-0 w-[250px]"
+        className="top-[5rem] left-0 w-[350px]"
       />
       <Cloud
         src={MendungImg3}
         alt="Mendung Kanan Pojok"
-        className="top-[5rem] right-0 w-[280px] translate-x-22"
+        className="top-[5rem] right-0 w-[300px] translate-x-22"
       />
       <Cloud
         src={MendungImg2}
         alt="Mendung Kanan Tengah"
-        className="top-[9rem] right-[1rem] w-[300px]"
+        className="top-[9rem] right-[1rem] w-[320px]"
       />
 
-      {/* Konten Utama Desktop */}
-      <div className="w-full max-w-[1280px] flex justify-center items-center gap-8 z-10">
-        <MascotFigure containerClassName="w-full max-w-[500px]" />
+      {/* Konten Utama Desktop dengan Posisi Absolut */}
+      <div className="w-full max-w-[1280px] relative h-[600px] mx-auto z-10">
+        <MascotFigure containerClassName="absolute bottom-[-4rem] -left-[2.5rem] w-full max-w-[650px] z-10" />
         <DescriptionBox
-          containerClassName="bg-[#FFF6EB] shadow-[10px_10px_0px_0px_#5E311E] rounded-xl border border-[#5E311E] w-full max-w-[650px] mt-[7.5rem] left-[6.5rem]"
+          containerClassName="bg-[#FFF6EB] shadow-[10px_10px_0px_0px_#5E311E] rounded-xl border border-[#5E311E]  absolute top-[13.5rem] left-[30.5rem] z-0 transform -translate-x-16"
           title="MASKOT BARU"
-          titleClassName="text-4xl font-bold font-['Titan_One'] text-[#5E311E] px-6 py-2 tracking-wide mt-[18.5rem] ml-[35rem]"
+          titleClassName="text-4xl font-bold font-['Titan_One'] text-[#5E311E] px-6 py-4 tracking-wide"
         >
           <p className="text-[#5E311E] text-justify leading-loose font-['Poppins'] text-lg">
             Dillo adalah seekor buaya yang memiliki semangat tinggi dalam

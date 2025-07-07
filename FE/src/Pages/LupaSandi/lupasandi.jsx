@@ -5,14 +5,14 @@ import logobakti from "../../assets/auth/Bakti.svg";
 const Lupasandi = () => {
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
-      {/* Background Image */}
+      {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{ backgroundImage: `url(${backgroundbakti})` }}
       ></div>
 
       {/* ==== Mobile Layout ==== */}
-      <div className=" md:hidden absolute inset-0 z-10 backdrop-blur-md flex items-center justify-center px-4">
+      <div className="md:hidden absolute inset-0 z-10 backdrop-blur-md flex items-center justify-center px-4">
         <div className="w-full max-w-sm bg-[#fefaf1]/90 p-6 rounded-2xl shadow-lg">
           <div className="flex items-center justify-center mb-6">
             <img src={logobakti} alt="logo" className="w-10 h-10 mr-2" />
@@ -47,12 +47,21 @@ const Lupasandi = () => {
               className="w-full px-4 py-2 mb-5 rounded-xl border border-[#a67c52] bg-white/90 text-[#623B1C] placeholder:text-[#c0a68a] focus:outline-none focus:ring-2 focus:ring-[#a67c52]"
             />
 
-            <button
-              type="submit"
-              className="w-full py-2 text-white font-bold bg-[#a67c52] rounded-xl hover:bg-[#623B1C] transition duration-300"
+            <a
+              href="https://www.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-center w-full py-2 mb-3 text-white font-bold bg-[#a67c52] rounded-xl hover:bg-[#623B1C] transition duration-300 hover:scale-105 cursor-pointer"
             >
               Submit
-            </button>
+            </a>
+
+            <a
+              href="/"
+              className="block text-center w-full py-2 text-[#623B1C] font-bold border border-[#a67c52] rounded-xl hover:bg-[#f3e9dd] transition duration-300 hover:scale-105 cursor-pointer"
+            >
+              Kembali ke Home
+            </a>
           </form>
         </div>
       </div>
@@ -93,12 +102,21 @@ const Lupasandi = () => {
               className="w-full px-4 py-2 mb-5 rounded-xl border border-[#a67c52] bg-white text-[#623B1C] placeholder:text-[#c0a68a] focus:outline-none focus:ring-2 focus:ring-[#a67c52]"
             />
 
-            <button
-              type="submit"
-              className="w-full py-2 text-white font-bold bg-[#a67c52] rounded-xl hover:bg-[#623B1C] transition duration-300 hover:scale-105"
+            <a
+              href="https://www.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-center w-full py-2 mb-3 text-white font-bold bg-[#a67c52] rounded-xl hover:bg-[#623B1C] transition duration-300 hover:scale-105 cursor-pointer"
             >
               Submit
-            </button>
+            </a>
+
+            <a
+              href="/login"
+              className="block text-center w-full py-2 text-[#623B1C] font-bold border border-[#a67c52] rounded-xl hover:bg-[#f3e9dd] transition duration-300 hover:scale-105 cursor-pointer"
+            >
+             Back
+            </a>
           </form>
         </div>
       </div>
